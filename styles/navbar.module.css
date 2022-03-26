@@ -1,0 +1,67 @@
+.navbar{
+  position: fixed;
+  height: 60px;
+  top:0; left: 0; right:0;
+  background: #fff;
+  padding:1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+
+.logo {
+  color:var(--black);
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.logo i{
+  color:var(--yellow);
+}
+
+.navbarlink a{
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  padding:.5rem 1.5rem;
+  color:var(--light-color);
+}
+
+.navbarlink a:active{
+  color:var(--black);
+  background: var(--yellow);
+  
+}
+.navbarlink a:hover{
+  color:#fff;
+  background: var(--yellow);
+}
+
+
+
+.btnCartCount {
+  width: 4.2rem;
+  height: 4.2rem;
+  background: var(--yellow);
+  color: var(--black);
+  border-radius: 10px;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  cursor: pointer;
+  right: 1rem;
+  margin-left: .5rem;
+  transform: rotate(45deg);
+  position: relative;
+}
+.btnCartCount:hover{
+  color:#fff;
+  background: var(--black);
+  transform: rotate(60deg);
+}
+.cart{
+  transform: rotate(-45deg);
+}

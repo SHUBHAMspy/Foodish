@@ -1,0 +1,36 @@
+.category{
+  padding:2rem 9%;
+  display:-ms-grid;
+	display: grid;
+	-ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+	gap: 1.5rem;
+	padding-bottom: 5rem;
+}
+
+.box {
+  padding: 2rem;
+  text-align: center;
+  border-radius: .5rem;
+  background: #eee;
+}
+
+.box:hover {
+  background: var(--yellow);
+}
+
+.box:hover h3 {
+  color: #fff;
+}
+
+.box img {
+  height: 7rem;
+}
+
+.box h3 {
+  font-size: 1.8rem;
+  color: #130f40;
+}
+
+
+

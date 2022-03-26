@@ -1,0 +1,95 @@
+/* section{
+  padding:2.0rem 9%;
+} */
+
+/* .heroContainer {
+
+} */
+
+.hero {
+  padding: 2.0rem 9%;
+}
+
+/* .wrapper {
+  height: 100%;
+  display: flex;
+  transition: all 1.5s ease;
+} */
+
+.slide {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:3rem; 
+  padding-top: 4rem;
+  
+}
+
+/* .active-anim {
+  opacity: 1;
+} */
+
+.content{
+  flex: 1 1 45rem;
+}
+
+.imageContainer {
+  flex:1 1 45rem;
+}
+
+.image {
+  width: 100%;
+}
+
+.content span{
+  color:var(--green);
+  font-size: 2.5rem;
+}
+
+.content h3{
+  color:var(--black);
+  font-size: 7rem;
+}
+
+.content p{
+  color:var(--light-color);
+  font-size: 2.2rem;
+  padding:.5rem 0;
+  line-height: 1.5;
+}
+
+.swiper-pagination-bullet-active{
+  background:var(--green);
+}
+
+.btn{
+  background: var(--yellow);
+  color:var(--black);
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  cursor: pointer;
+  margin-top: 2.5rem;
+  box-shadow: var(--box-shadow);
+
+}
+
+@media (min-width:769px ) and (max-width:1115px) {
+  .hero{
+      padding:2rem;
+  }
+}
+
+@media (max-width:768px){
+  .content h3{
+      font-size: 5rem;
+  }
+}
