@@ -1,6 +1,6 @@
 import React from 'react'
-import Footer from './footer'
-import Navbar from './navbar'
+import Footer from './common/footer'
+import Navbar from './common/navbar'
 
 
 const Layout = ({children}) => {

@@ -7,7 +7,7 @@
 } */
 
 .hero {
-  padding: 2.0rem 9%;
+  padding: 3.0rem 9%;
 }
 
 /* .wrapper {
@@ -84,7 +84,7 @@
 
 @media (min-width:769px ) and (max-width:1115px) {
   .hero{
-      padding:2rem;
+      padding:4rem 2rem 2rem 2rem;
   }
 }
 
@@ -92,4 +92,7 @@
   .content h3{
       font-size: 5rem;
   }
+  .hero{
+    padding-top:5rem ;
+}
 }
