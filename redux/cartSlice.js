@@ -1,11 +1,16 @@
 import { createDraftSafeSelector, createSlice } from "@reduxjs/toolkit";
-
+import Cookies from 'js-cookie';
 const cartSlice = createSlice({
   name: "cart",
   initialState: {
-    products: [],
+    products:Cookies.get('products') 
+      ? JSON.parse(Cookies.get('products'))
+      : [],
   },
 
+  // products: Cookies.get('products') 
+  // ? JSON.parse(Cookies.get('products'))
+  // : [] ,
   // We can write the case reducers as functions inside of an object, instead of having to write a switch/case statement
   // The reducers will be able to write shorter immutable update logic
   // All the action creators will be generated automatically based on the reducer functions we've provided
