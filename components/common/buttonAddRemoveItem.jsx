@@ -2,9 +2,10 @@ import React from 'react';
 import { FaMinus, FaPlus } from "react-icons/fa";
 import styles from "../../styles/buttonAddRemoveItem.module.css";
 
-const ButtonAddRemoveItem = ({ quantity, handleAddItem, handleRemoveItem }) => {
+const ButtonAddRemoveItem = ({className,label, quantity, handleAddItem, handleRemoveItem }) => {
+  console.log(quantity);
   return (
-    <div className={styles.btnAddRemove}>
+    <div className={className}>
       {quantity !== 0 ? (
         <div className={styles.positive}>
             
@@ -14,7 +15,7 @@ const ButtonAddRemoveItem = ({ quantity, handleAddItem, handleRemoveItem }) => {
         </div>
       ) : (
         <div onClick={handleAddItem} className={styles.negative}>
-          <span>ADD</span>
+          <span>{label}</span>
           <FaPlus/>
         </div>
       )}
