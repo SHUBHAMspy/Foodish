@@ -1,0 +1,171 @@
+.order {
+  padding: 10rem 9%;
+  display: flex;
+}
+
+.left {
+  flex: 2;
+}
+
+.table {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 50px;
+  border-radius: .5rem;
+  background: #fff;
+  padding: 1rem;
+  font-size: 1.2rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.row:last-child {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.done {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inProgress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: inProgress 1s ease infinite alternate;
+}
+
+@keyframes inProgress {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.undone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.3;
+}
+
+.undone .checkedIcon,
+.inProgress .checkedIcon {
+  display: none;
+}
+
+.right {
+  flex: 1;
+}
+
+.wrapper {
+  width: 80%;
+  height: 50vh;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.title{
+  font-weight: 500;
+}
+.totalText{
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.totalTextTitle {
+  margin-right: 10px;
+}
+
+.button {
+  background-color: white;
+  height: 30px;
+  color: var(--green);
+  font-weight: bold;
+  
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 659px) {
+  .order {
+    flex-direction: column;
+  }
+
+  .trTitle {
+    display: none;
+  }
+
+  .tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  .id::before {
+    content: "Order ID: ";
+    font-weight: 500;
+  }
+  .name::before {
+    content: "Customer: ";
+    font-weight: 500;
+  }
+  .address::before {
+    content: "Address: ";
+    font-weight: 500;
+  }
+  .total::before {
+    content: "Total: ";
+    font-weight: 500;
+  }
+
+  .row:last-child {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .done,
+  .undone,
+  .inProgress {
+    margin-bottom: 20px;
+  }
+
+  .wrapper{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 660px) and (max-width:1115px) {
+  .order {
+    padding: 10rem 2.5rem 3rem 2.5rem;
+    display: flex;
+  }
+
+  .wrapper {
+    padding: 18px;
+    
+  }
+
+  .totalText{
+    margin: 8px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 200;
+    font-size: 15px;
+  }
+}

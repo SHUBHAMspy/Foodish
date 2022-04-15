@@ -4,10 +4,11 @@ import Order from '../../../models/order';
 
 const handler = nc();
 
-await dbConnect();
+
 
 handler.get(async(req,res) => {
   const {query: { id }} = req;
+  await dbConnect();
   try {
     const order = await Order.findById(id);
     res.status(200).json(order);
@@ -18,6 +19,7 @@ handler.get(async(req,res) => {
 
 handler.put(async(req,res) => {
   const {query: { id }} = req;
+  await dbConnect();
   try {
     const order = await Order.findByIdAndUpdate(id,req.body,{new:true,});
     res.status(200).json(order);
